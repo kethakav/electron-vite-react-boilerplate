@@ -12,6 +12,10 @@ A modern Electron application boilerplate built with Vite, React, TypeScript, an
 
 ![Screenshot of the running application](docs/screenshot.png)
 
+## 💡 Motivation
+
+I created this boilerplate because I couldn't find thorough documentation on **electron-builder NSIS** and **electron-updater auto updates**. Setting up these features can be quite a headache, so I built this comprehensive template with everything properly configured to help others avoid the same struggles.
+
 ## 🚀 Features
 
 - **⚡️ Vite** - Lightning fast build tool and dev server
@@ -271,6 +275,7 @@ The boilerplate includes pre-configured IPC handlers for:
 
 ## 📚 Resources
 
+### Core Technologies
 - [Electron Documentation](https://www.electronjs.org/docs)
 - [Vite Documentation](https://vitejs.dev/guide/)
 - [React Documentation](https://react.dev/)
@@ -290,7 +295,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 🙏 Acknowledgments
 
-- [Electron Vite](https://electron-vite.github.io/) - For the excellent Vite integration
-- [DaisyUI](https://daisyui.com/) - For the beautiful component library
-- [Vite](https://vitejs.dev/) - For the fast build tool
+This boilerplate was inspired by and built upon the excellent work of:
+
+- [Electron⚡️Vite](https://electron-vite.github.io/) - The best practice integration solution between Electron and Vite, providing the foundation for modern Electron development
+- [electron-vite-react](https://github.com/electron-vite/electron-vite-react) - The Electron + Vite + React boilerplate that served as the primary inspiration and reference for this project
+- [DaisyUI](https://daisyui.com/) - For the beautiful component library built on Tailwind CSS
+- [Vite](https://vitejs.dev/) - For the lightning-fast build tool and development server
 - [React](https://react.dev/) - For the amazing UI library
