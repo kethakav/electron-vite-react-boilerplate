@@ -24,6 +24,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Build application
+        run: npm run build:ci
+
       - name: Build and publish with electron-builder
         env:
           GH_TOKEN: ${{ secrets.RELEASE_PUSH_TOKEN }}
