@@ -116,6 +116,7 @@ setInterval(() => {
 - [ ] Replace app icons in `public/` directory
 - [ ] Set up GitHub repository for releases
 - [ ] Configure GitHub Actions (optional)
+- [ ] Set up release system (see RELEASE-GUIDE.md)
 - [ ] Test the development build: `npm run dev`
 - [ ] Test the production build: `npm run build`
 

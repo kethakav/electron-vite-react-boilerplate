@@ -34,7 +34,7 @@ A modern Electron application boilerplate built with Vite, React, TypeScript, an
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/kethakav/electron-vite-react-boilerplate.git
 cd electron-vite-react-boilerplate
 ```
 
@@ -181,6 +181,64 @@ This boilerplate includes a complete auto-update system:
 
 ### Usage
 The update system is automatically integrated. Users can check for updates via the UI button.
+
+## 🚀 Releasing Updates
+
+This boilerplate includes automated release publishing via GitHub Actions. Here's how to release a new version:
+
+### Prerequisites
+1. **GitHub Token**: Create a personal access token with `repo` permissions
+2. **Repository Secret**: Add your token as `RELEASE_PUSH_TOKEN` in your repository settings
+3. **Release Repository**: Set up a separate repository for releases (e.g., `your-app-releases`)
+
+### Release Process
+
+1. **Update Version**
+   ```bash
+   # Update version in package.json
+   npm version patch  # or minor, major
+   ```
+
+2. **Create and Push Tag**
+   ```bash
+   # Create a new tag (GitHub Actions will trigger on v* tags)
+   git tag v1.0.1
+   git push origin v1.0.1
+   ```
+
+3. **Automated Build**
+   - GitHub Actions will automatically:
+     - Build the application
+     - Create Windows installer
+     - Publish to your release repository
+     - Update the auto-updater
+
+### Configuration Files
+
+Update these files for your release setup:
+
+#### `electron-builder.json`
+```json
+{
+  "publish": {
+    "provider": "github",
+    "owner": "yourusername",
+    "repo": "your-app-releases"
+  }
+}
+```
+
+#### GitHub Repository Settings
+1. Go to Settings → Secrets and variables → Actions
+2. Add `RELEASE_PUSH_TOKEN` with your GitHub token
+3. Ensure the token has `repo` permissions
+
+### Release Workflow
+The workflow triggers on tags matching `v*` pattern and:
+- Builds the application
+- Creates Windows installer
+- Publishes to your release repository
+- Enables auto-updates for users
 
 ## 🎨 Styling with DaisyUI
 
