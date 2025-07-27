@@ -14,7 +14,7 @@ A modern Electron application boilerplate built with Vite, React, TypeScript, an
 
 ## 💡 Motivation
 
-I created this boilerplate because I couldn't find thorough documentation on **electron-builder NSIS** and **electron-updater auto updates**. Setting up these features can be quite a headache, so I built this comprehensive template with everything properly configured to help others avoid the same struggles.
+I created this boilerplate because I couldn't find thorough documentation on **electron-builder NSIS** and **electron-updater auto updates**. Setting up these features can be quite a headache, so I built this template with everything properly configured to help others avoid the same struggles.
 
 ## 🚀 Features
 
